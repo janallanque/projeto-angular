@@ -15,6 +15,9 @@ body{
     /* cover adapta a imagem a tela do usuario */
     background-size: cover;
 }
+h1{
+  font-size: 4rem;
+}
 
 
 
@@ -64,8 +67,9 @@ button {
     max-width: 1500px;
     margin: 3rem auto 0;
     background-color: #fdfdfd;
+    border: solid .6rem #102f5e;
     padding: 1.5rem;
-    border-radius: 15px;
+    border-radius: 30px;
     align-items: center;
     
 
@@ -145,7 +149,7 @@ button {
     
     text-align: center;
     margin-top: 1rem;
-    font-size: 1.2rem;
+    font-size: 1.8rem;
   }
 
   #texto{
@@ -153,10 +157,21 @@ button {
   }
 
  table{
-    font-size: 3rem;
+    font-size: 2rem;
     align-items: center;
+   
  } 
 
- #tabela{
-    align-items: center;
+ th{
+  text-align: left;
+ 
+  border-bottom: solid .1rem #097227;
+  padding: 1rem;
+  
  }
+
+ td{
+  border-bottom: solid .1rem #097227;
+  padding: 1.6rem;
+ }
+ 
