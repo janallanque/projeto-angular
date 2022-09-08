@@ -24,7 +24,7 @@ h1{
 button {
     background-color: #fdfdfd;
     color: #102f5e;
-    border: 2px solid #102f5e;
+    border: 1px solid #102f5e;
     padding: 0.3rem 0.6rem;
     font-size: 2rem;
     cursor: pointer;
@@ -39,6 +39,7 @@ button {
   #btn-cadastrar{
     
     border-radius: 2rem;
+    
   }
 
   button:hover {
@@ -64,13 +65,14 @@ button {
 }
 /* biblioteca Header */
 .biblioteca-container {
-    max-width: 1500px;
+    max-width: 1200px;
     margin: 3rem auto 0;
     background-color: #fdfdfd;
-    border: solid .6rem #102f5e;
+    border: solid .4rem #102f5e;
     padding: 1.5rem;
     border-radius: 30px;
     align-items: center;
+    position: relative;
     
 
   }
@@ -81,9 +83,18 @@ button {
     border-bottom: 1px solid #ccc;
   }
 
+  #biblioteca{
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* background-color: aqua; */
+    position: absolute;
+   
+  }
+
   
 
-.form-control{
+#form-control{
   display: flex;
   margin-top: 1rem;
   flex-direction: column;
@@ -92,7 +103,7 @@ button {
 
 }
 
-.form-control input {
+#form-control input {
   margin-right: 0.3rem;
   margin-top: .5rem;
   font-size: 2rem;
@@ -174,4 +185,5 @@ button {
   border-bottom: solid .1rem #097227;
   padding: 1.6rem;
  }
+
  

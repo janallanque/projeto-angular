@@ -6,30 +6,35 @@
   </header> 
      <!--/////////////////////////////////////////////////////////////////////////////////////  -->
       <!-- form#biblioteca-form  -->
-      <form id="biblioteca-form">
+      
           <h4>Cadastre um livro</h4>
-          <div class="form-control">
-              <input type="text" id="biblioteca-input-titulo" placeholder="Título">
+          <!-- <div id="form-controls"> -->
+            <form id="form-control">
+              <input type="text"  placeholder="Título"  name="titulo">
               
-              <input type="text" id="biblioteca-input-descrisao" placeholder="Descrição">
+              <input type="text"  name="descrisao" placeholder="Descrição">
             
-              <input type="text" id="biblioteca-input" placeholder="Autor">
+              <input type="text"  name="autor" placeholder="Autor">
                  
-              <input type="text" id="biblioteca-input" placeholder="Editora">   
+              <input type="text"  name="editora" placeholder="Editora">   
              
-              <button type="submit" id="btn-cadastrar">
-                  cadastrar
+          </form>    
+                  
                  
-              </button>
+              
         
-          </div>
+          <!-- </div> -->
 
 
-      </form>
+      
+      <div id="biblioteca">
+         <button  (click)="cadastrar()" id="btn-cadastrar">cadastrar</button>
+      </div>
+     
      <!-- ///////////////////////////////////////////////////////////////////////// -->
       
       <div id="biblioteca-list">
-        <h1 style="margin: 2rem;">Lista de livros</h1>
+        <h1 style="margin-top: 5rem; margin-bottom: 5rem;">Lista de livros</h1>
      
         <!-- /////////////////////////////////////////////////////////// -->
       
@@ -65,9 +70,9 @@
           </tr>
           <!--///////////////////////////////////////////////////////////  -->
           <tr>
-            <td>javascript</td>
+            <td>python</td>
             <td>livro de programação</td>
-            <td>joao batista candido</td>
+            <td>jose marcos costa</td>
             <td>gama academy</td>
             
             <td> <button class="editar-biblioteca">
@@ -81,22 +86,7 @@
             
           </tr>
           <!-- ///////////////////////////////////////////////////////////// -->
-          <tr>
-            <td>guia do css</td>
-            <td>estilização de paginas html</td>
-            <td>juca de oliveira</td>
-            <td>gama academy</td>
-            
-            <td> <button class="editar-biblioteca">
-              <i class="fa-solid fa-pen"></i>
-            </button>
-            </td>
-            <td> <button class="remover-biblioteca">
-              <i class="fa-solid fa-xmark"></i>
-            </button>
-            </td>
-            
-          </tr>
+         
           <!-- ///////////////////////////////////////////////////////////// -->
         </table>
         
